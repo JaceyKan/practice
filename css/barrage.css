@@ -1,0 +1,42 @@
+/*设置显示面板*/
+#showWords{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 25em;
+    position: relative;
+}
+
+/*设置输入框*/
+#word{
+    display: block;
+    width: 40%;
+    height: 2em;
+    margin: 1.2em auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+}
+
+#actions{
+    text-align: center;
+}
+
+/*设置按钮*/
+#actions button{
+    padding: 0.5em 2em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em 4em;
+    margin: 0.3em 0.1em;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+#actions button:hover{
+    border-color: red;
+    color: red;
+}
+
+.moveWord{
+    position: absolute;
+}

@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+body{
+    background-color: #FB6964;
+}
+
+/*设置白色主面板*/
+#mainContain{
+    background-color: #fff;
+    width: 35em;
+    //height: 100px;
+    margin: 3em auto 1em auto;
+    padding: 2em;
+    //border: 1px solid #FB6964;
+    border-radius: 5px;
+    text-align: center;
+    //float: left;
+}
+
+/*设置引用文本 和 引用作者*/
+.quoteText, .quoteAuthor{
+    color: #FB6964;
+   // border: 1px solid #000;
+    margin: 1em;
+}
+
+.quoteText{
+    font-size: 2em;
+}
+
+.quoteAuthor{
+    //float: right;
+    text-align: right;
+}
+/*结束设置引用文本 和 引用作者*/
+
+/*设置按钮部分*/
+.buttons{
+    //border: 1px solid #000;
+    margin: 0.5em;
+}
+
+.button, .buttons #changeQuote{
+    background-color: #FB6964;
+    border-radius: 4px;
+    color: #fff;
+    margin: 1em 0.1em;
+}
+
+.button:hover, .buttons #changeQuote:hover{
+    opacity: 0.9;
+}
+
+.button{
+    float: left;
+    padding: 0.3em 0.6em;
+}
+
+.buttons #changeQuote{
+    float: right;
+    border: none;
+    padding: 0.7em 1.5em;
+    font-size: 0.8em;
+}
+/*结束设置按钮部分*/
+/*结束设置白色主面板*/
+
+/*设置页脚部分*/
+#footer{
+    text-align: center;
+    color: #fff;
+    font-size: 0.5em;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+/*结束设置页脚部分*/

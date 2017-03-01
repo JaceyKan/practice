@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainContain{
+    padding: 1em;
+    width: 50em;
+    margin: 3em auto;
+    background-color: #FB6964;
+}
+
+.mainContain a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+.mainContain a:hover{
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    border-radius: 5px;
+}
