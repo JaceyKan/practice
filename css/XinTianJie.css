@@ -1,0 +1,324 @@
+/*初始化*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 1920px;
+}
+
+/*head通用设置*/
+.head{
+    text-align: center;
+    width: 100%;
+}
+
+.head h1 h2{
+    line-height: 48px;
+}
+
+.head h1{
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.head h1 span{
+    color: #c91a21;
+}
+
+.head h2{
+    font-size: 18px;
+    font-weight: normal;
+    color: #c6c6c6;
+    border-bottom: 1px solid #cf1b25;
+    display: inline-block;
+//background-color: yellow;
+    padding: 9px 0;
+}
+
+.head p{
+    line-height: 24px;
+    font-size: 15px;
+    color: #b8b8b8;
+    margin: 21px 0 51px 0;
+}
+/* end head通用设置*/
+
+/*设置顶端*/
+.top{
+    padding: 25px 0 25px 0;
+    border-bottom: 2px solid #e62129;
+}
+
+.top img {
+    margin-left: 368px;
+    margin-right: 167px;
+}
+
+.top ul{
+    float: right;
+    //background-color: #cccccc;
+    margin-right: 350px;
+}
+.top ul li{
+    list-style: none;
+    float: right;
+    line-height: 49px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei", serif;
+    margin-right: 40px;
+    //background-color: yellow;
+}
+
+.top ul li a{
+    text-decoration: none;
+    color: #515151;
+}
+/*end 设置顶端*/
+
+/*设置banner*/
+.banner{
+    background: url(../img/xintianjie/bannerBackground.png) no-repeat #eaf0ee;
+}
+
+.banner img{
+    margin: 277px 0 70px 360px;
+    //background-color: yellow;
+}
+/*end 设置banner*/
+
+/*设置培训课程*/
+.trainingCourse img{
+   // margin-bottom: 40px;
+   margin: 0 auto 40px auto;
+    display: block;
+}
+/*end 设置培训课程*/
+
+/*设置简介*/
+.profile{
+    background-color: #f3f3f3;
+    float: left;
+    width: 100%;
+}
+
+.profile .contain img{
+    float: left;
+    margin: 12px 115px 63px 360px;
+}
+
+.profile .contain p{
+    float: left;
+    width: 616px;
+    font-size: 14px;
+    line-height: 48px;
+    text-indent: 2em;
+    margin-top: 37px;
+}
+/*end 设置简介*/
+
+/*设置咨询项目*/
+.project{
+    background-color: #fff;
+    width: 100%;
+    float: left;
+}
+.project img{
+    margin: 0 auto 41px auto;
+    display: block;
+}
+/*end 设置咨询项目*/
+
+/*设置新闻资讯*/
+.newsInformation{
+    background-color: #f3f3f3;
+    float: left;
+    width: 100%;
+}
+
+.newsInformation .newsImg{
+    float: left;
+    margin: 64px 13px 41px 359px;
+}
+
+.newsInformation .news{
+    float: left;
+    width: 705px;
+    margin-top: 64px;
+}
+
+.newsInformation .news .new{
+    background-color: #e9e9e9;
+    margin-bottom: 15px;
+    padding: 21px 21px 15px 21px;
+}
+
+.new h2{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    border-bottom: 1px solid red;
+    padding-bottom: 15px;
+    color: #575757;
+}
+
+.new h2 img{
+    vertical-align: text-bottom;
+}
+
+.new p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #a5a5a5;
+}
+
+.new .updateTime{
+    text-align: right;
+}
+/*end 设置新闻资讯*/
+
+/*设置客户展示*/
+.clientPresentation{
+    float: left;
+    width: 100%;
+}
+
+.clientPresentation .contain {
+    padding-left: 360px;
+    padding-right: 336px;
+}
+
+.clientPresentation .logo{
+    width: 187px;
+    height: 120px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.clientPresentation .logo span{
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.clientPresentation .logo img{
+    vertical-align:middle;
+}
+
+.contactMessage {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    position: relative;
+}
+
+.contactMessage .companyName{
+    font-size: 18px;
+    line-height: 30px;
+    border: 1px solid #999;
+    display: inline-block;
+    padding: 8px 24px;
+    position: relative;
+    z-index: 6;
+    background-color: #fff;
+}
+
+.contactMessage hr{
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    z-index: 3;
+}
+
+.contactMessage .message{
+    font-size: 16px;
+    line-height: 30px;
+    margin:19px 0 29px 0;
+}
+/*end 设置客户展示*/
+
+/*footer 设置*/
+.footer{
+    background-color: #525252;
+    width: 100%;
+    float: left;
+}
+
+.footer #message{
+    float: left;
+    width: 100%;
+}
+
+.footer .footerMessage{
+    float: left;
+    padding: 0 100px;
+    font-size: 14px;
+    color: #a9a9a9;
+    text-align: center;
+    height: 130px;
+    margin: 31px 0 35px 0;
+}
+
+.footer .footerMessage .footerHead{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#customerServiceHotline{
+    margin-left: 462px;
+}
+
+#customerServiceHotline img{
+    margin: 30px 0 24px 0;
+}
+
+#attention{
+    border-left: 1px dashed #a9a9a9;
+    border-right: 1px dashed #a9a9a9;
+}
+
+#attention .wx{
+    float: left;
+    margin-top: 24px;
+}
+
+#wxLogo{
+    margin-right: 38px;
+}
+
+#onlineConsultation img{
+    margin: 21px 0 13px 0;
+}
+
+.footer ul{
+    text-align: center;
+}
+
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.footer ul li a{
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+.footer p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #a9a9a9;
+    text-align: center;
+    margin-bottom: 19px;
+}
+/*end footer设置*/
