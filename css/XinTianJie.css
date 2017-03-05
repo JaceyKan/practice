@@ -34,7 +34,6 @@ body{
     color: #c6c6c6;
     border-bottom: 1px solid #cf1b25;
     display: inline-block;
-//background-color: yellow;
     padding: 9px 0;
 }
 
@@ -59,7 +58,6 @@ body{
 
 .top ul{
     float: right;
-    //background-color: #cccccc;
     margin-right: 350px;
 }
 .top ul li{
@@ -69,7 +67,6 @@ body{
     font-size: 18px;
     font-family: "Microsoft YaHei", serif;
     margin-right: 40px;
-    //background-color: yellow;
 }
 
 .top ul li a{
@@ -81,11 +78,41 @@ body{
 /*设置banner*/
 .banner{
     background: url(../img/xintianjie/bannerBackground.png) no-repeat #eaf0ee;
+    height: 587px;
+    position: relative;
 }
 
 .banner img{
     margin: 277px 0 70px 360px;
-    //background-color: yellow;
+}
+
+/*设置banner按钮*/
+.buttons{
+    //text-align: center;
+    position:absolute;
+    left: 918px;
+    bottom: 27px;
+    z-index: 100;
+}
+.buttons span{
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+}
+#button1{
+    background-color: #cf1b25;
+}
+#button2{
+    margin: 0 20px;
+}
+/*end 设置banner按钮*/
+
+/*设置子banner*/
+.subBanner{
+    position:absolute;
+    left: 1920px;
 }
 /*end 设置banner*/
 
