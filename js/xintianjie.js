@@ -44,7 +44,7 @@ $(document).ready(function(){
     $(".button").eq(0).click(); //页面初始时点击一下第一个按钮，启动图片循环
     //end 使banner的图片循环展示
 
-    //当在banner面板上悬停时，显示左右切换按钮
+    //当鼠标在banner面板上悬停时，显示左右切换按钮
     $(".banner").mouseover(function(){
         $(".nextBtn").css({
             "display":"inline"
