@@ -18,11 +18,13 @@ $(document).ready(function(){
         current=$(this).index();  //获取当前按钮的序列
 
         //实现从左或从右滑动出现
-        if(current<last){
-            $(".subBanner").css({left:'-1920px'});
+        if((current==0 && last==length-1) || current>last){  //如果（下一个要展示的序列是0且上一个是序列中的最后一个） 或 当前要展示的序列比上一个大，向左滑动
+            $(".subBanner").eq(current).css({left:'1920px'});
+            $(".subBanner").eq(last).animate({left:'-1920px'});
             $(".subBanner").eq(current).animate({left:'0'});
-        }else if(current>last){
-            $(".subBanner").css({left:'1920px'});
+        }else if(current<last){  //如果当前要展示的序列比上一个小，向右滑动
+            $(".subBanner").eq(current).css({left:'-1920px'});
+            $(".subBanner").eq(last).animate({left:'1920px'});
             $(".subBanner").eq(current).animate({left:'0'});
         }
 
@@ -41,4 +43,32 @@ $(document).ready(function(){
 
     $(".button").eq(0).click(); //页面初始时点击一下第一个按钮，启动图片循环
     //end 使banner的图片循环展示
+
+    //当在banner面板上悬停时，显示左右切换按钮
+    $(".banner").mouseover(function(){
+        $(".nextBtn").css({
+            "display":"inline"
+        });
+    });
+    $(".banner").mouseout(function(){
+        $(".nextBtn").css({"display":"none"});
+    });
+
+    //点击左切换按钮时，next值为当前序列减1
+    $("#leftBtn").click(function (){
+        next=current-1;
+        if(next<0){
+            next=length-1;
+        }
+        $(".button").eq(next).click();
+    });
+
+    //点击左切换按钮时，next值为当前序列加1
+    $("#rightBtn").click(function (){
+        next=current+1;
+        if(next>length-1){
+            next=0;
+        }
+        $(".button").eq(next).click();
+    });
 });

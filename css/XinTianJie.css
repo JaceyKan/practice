@@ -77,9 +77,11 @@ body{
 
 /*设置banner*/
 .banner{
-    background: url(../img/xintianjie/bannerBackground.png) no-repeat #eaf0ee;
+    //background: url(../img/xintianjie/bannerBackground.png) no-repeat #eaf0ee;
+    background: #eaf0ee;
     height: 587px;
     position: relative;
+    overflow: hidden;
 }
 
 .banner img{
@@ -111,9 +113,48 @@ body{
 
 /*设置子banner*/
 .subBanner{
+    width: 100%;
+    height: 587px;
     position:absolute;
     left: 1920px;
 }
+
+#subBanner0{
+    background: url(../img/xintianjie/bannerBackground.png) no-repeat #eaf0ee;
+    left: 0;
+}
+
+#subBanner1{
+    background: red;
+}
+
+#subBanner2{
+    background: #eee;
+}
+
+/*设置左右切换按钮*/
+.nextBtn{
+    position: absolute;
+    z-index: 10;
+    background-color: #c6c6c6;
+    color: #ffffff;
+    opacity: 0.5;
+    padding: 0 5px;
+    display: none;
+}
+
+.nextBtn:hover{
+    background-color: #575757;
+}
+
+#leftBtn{
+    top: 290px;
+}
+#rightBtn{
+    top: 290px;
+    right: 0;
+}
+/*end 设置左右切换按钮*/
 /*end 设置banner*/
 
 /*设置培训课程*/
