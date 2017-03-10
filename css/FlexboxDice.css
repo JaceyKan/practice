@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #fff,#333);
+}
+
+[class$="Face"]{
+    width: 104px;
+    height: 104px;
+    padding: 4px;
+    margin: 16px;
+    background-color: #E7E7E7;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
+    display: flex;
+    box-shadow:
+        0 5px white inset,
+        0 -5px #bbb inset,
+        5px 0 #d7d7d7 inset,
+        -5px 0 #d7d7d7 inset;
+}
+
+.item{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #333333;
+    border-radius: 50%;
+    box-shadow:
+        0 3px #111 inset,
+        0 -3px #555 inset;
+    margin: 4px;
+}
+
+.firstFace{
+    justify-content: center;
+    align-items: center;
+//flex-direction: row;
+}
+
+.secendFace{
+    justify-content: space-between;
+}
+
+.secendFace .item:nth-of-type(2){
+    align-self: flex-end;
+}
+
+.thirdFace{
+    justify-content: space-between;
+}
+
+.thirdFace .item:nth-of-type(2){
+    align-self: center;
+}
+
+.thirdFace .item:nth-of-type(3){
+    align-self: flex-end;
+}
+
+.fourthFace, .sixthFace{
+    justify-content: space-between;
+}
+
+.fourthFace .column, .fifthFace .column, .sixthFace .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifthFace .column:nth-of-type(2){
+    justify-content: center;
+}
