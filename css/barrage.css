@@ -28,7 +28,6 @@ body{
 
 /*设置按钮*/
 #actions button{
-    padding: 0.5em 2em;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
