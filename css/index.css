@@ -36,11 +36,12 @@ body{
     display: block;
 }
 
-.mainContain li:hover{
+.mainContain a:hover{
     background-color: #efefef;
     box-shadow: 2px 2px 2px #ccc;
     border-radius: 5px;
 }
+
 
 @media(min-width: 600px){
     .mainContain{
