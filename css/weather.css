@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width:80%;
+    margin: 0  auto;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 18px;
+    font-weight: 300;
+    color: #33336C;
+}
+
+#headline{
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+#headline h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#headline a{
+    text-decoration: none;
+    color: #6A6A6A;
+}
+
+#headline h1 span{
+    font-weight: 300;
+    color: #FFA500;
+    letter-spacing: 0.1em;
+    padding-left: 0.1em;
+}
+
+#headline img{
+    vertical-align: text-bottom;
+    margin-right: 0.2em;
+    height: 1.5em;
+}
+
+#headline p,#headline form *{
+    font-size: 16px;
+    margin-top: 0.7em;
+    line-height: 1.6em;
+}
+
+#headline form input{
+    width: 10em;
+}
+
+#headline form button{
+    padding: 0 1em;
+}
+
+#todayWeather .container{
+    //background-color: yellow;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0.6em 0;
+    margin: 1em auto;
+}
+
+#todayWeather li, #todayWeather h2{
+    list-style: none;
+    margin: 0.7em 0;
+}
+
+
+#todayWeather li{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#future .futureDay{
+    float: left;
+    margin: 1em 3em;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+@media(min-width: 600px){
+    .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+}

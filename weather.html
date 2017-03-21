@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/weather.css">
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/weather.js"></script>
+    <title>天气应用</title>
+</head>
+<body>
+    <div id="headline">
+        <div class="container">
+            <h1><a href="https://www.juhe.cn/"><img src="img/logo-jh.png"/>聚合数据</a><span id="highlight">天气应用</span></h1>
+            <p id="date">ddd</p>
+            <form action="http://v.juhe.cn/weather/index">
+                <label>输入要查询的城市名称：<input type="text" name="cityname" id="cityname" placeholder="北京"></label>
+                <button type="submit" id="show">查询</button>
+            </form>
+        </div>
+    </div>
+    <div id="todayWeather">
+        <div class="container">
+            <h2>今天天气</h2>
+            <ul>
+                <li id="tWeather"></li>
+                <li id="tTemperature"></li>
+                <li>湿度：<span id="skHumidity"></span></li>
+                <li>穿衣指数：<span id="dressing_index"></span></li>
+                <li>洗车指数：<span id="wash_index"></span></li>
+                <li>旅行指数：<span id="travel_index"></span></li>
+                <li>锻炼指数：<span id="exercise_index"></span></li>
+                <li>紫外线指数：<span id="uv_index"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="futureWeather">
+        <div class="container">
+            <h2>未来6天天气</h2>
+            <div id="future">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
