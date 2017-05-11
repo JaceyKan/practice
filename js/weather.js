@@ -1,14 +1,3 @@
-function addScriptTag(src){
-    var script=document.createElement("script");
-    script.setAttribute("type","text/javascript");
-    script.src=src;
-    document.body.appendChild(script);
-}
-
-function foo(data) {
-    console.log(data.result.today);
-}
-
 //返回当前的日期和星期
 function getDateWeek(){
     var date=new Date();
@@ -25,8 +14,9 @@ $(document).ready(function(){
 
     //当发生 submit 事件时运行的函数
     $("form").submit(function(e){
-        //addScriptTag("http://v.juhe.cn/weather/index?format=2&cityname=%E8%8B%8F%E5%B7%9E&key=47ae6e500980056c1defce105b3a90c3&callback=foo");
         e.preventDefault();  //使用 preventDefault() 函数阻止提交按钮的默认 action。
+
+        //判断输入的城市名称是否为空
         if($("#cityname").val().trim() == ""){
             alert("城市名称不能为空!");
             $("#cityname").val("");
@@ -34,12 +24,12 @@ $(document).ready(function(){
             return;
         }
 
-            var data=$("form").serialize();
-            data+="&key=47ae6e500980056c1defce105b3a90c3";
+        var data=$("form").serialize();  //输出序列化表单值的结果
+        data+="&key=47ae6e500980056c1defce105b3a90c3";
 
-            $.getJSON("http://v.juhe.cn/weather/index?callback=?",
-                data,
-                function (responseText) {
+        $.getJSON("http://v.juhe.cn/weather/index?callback=?",
+            data,
+            function (responseText) {
                     if(responseText.resultcode == 200){
                         //显示今天天气
                         var today=responseText.result.today;
@@ -73,7 +63,7 @@ $(document).ready(function(){
                         $("#cityname").focus();
                     }
                 }
-            );
+        );
         
 
     });

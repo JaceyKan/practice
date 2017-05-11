@@ -50,7 +50,8 @@
 }
 
 #headline form input{
-    width: 10em;
+    width: 12em;
+    text-align: center;
 }
 
 #headline form button{
